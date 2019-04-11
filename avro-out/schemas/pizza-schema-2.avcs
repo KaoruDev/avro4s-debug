@@ -11,10 +11,23 @@
       "type" : "array",
       "items" : [ {
         "type" : "record",
+        "name" : "Artichoke",
+        "fields" : [ {
+          "name" : "foobar",
+          "type" : "boolean"
+        }, {
+          "name" : "count",
+          "type" : "int"
+        } ]
+      }, {
+        "type" : "record",
         "name" : "Mushroom",
         "fields" : [ {
           "name" : "vegan",
           "type" : "boolean"
+        }, {
+          "name" : "count",
+          "type" : "int"
         } ]
       }, {
         "type" : "record",
@@ -24,7 +37,7 @@
           "type" : "boolean"
         }, {
           "name" : "organic",
-          "type" : "boolean"
+          "type" : "string"
         } ]
       } ]
     }
@@ -33,7 +46,7 @@
     "type" : {
       "type" : "enum",
       "name" : "CrustType",
-      "symbols" : [ "Pan", "Thin" ]
+      "symbols" : [ "HandTossed", "Pan", "Thin" ]
     }
   } ]
 }
