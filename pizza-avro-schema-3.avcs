@@ -1,0 +1,45 @@
+{
+  "type" : "record",
+  "name" : "Pizza",
+  "namespace" : "com.kaoruk",
+  "fields" : [ {
+    "name" : "name",
+    "type" : "string"
+  }, {
+    "name" : "ingredient",
+    "type" : {
+      "type" : "array",
+      "items" : [ {
+        "type" : "record",
+        "name" : "Mushroom",
+        "fields" : [ {
+          "name" : "name",
+          "type" : "string"
+        } ]
+      }, {
+        "type" : "record",
+        "name" : "Peperoni",
+        "fields" : [ {
+          "name" : "name",
+          "type" : "string"
+        }, {
+          "name" : "bam",
+          "type" : {
+            "type" : "enum",
+            "name" : "Bam",
+            "symbols" : [ "Apple", "Bar", "Foo" ]
+          }
+        } ]
+      } ]
+    }
+  }, {
+    "name" : "vegetarian",
+    "type" : "boolean"
+  }, {
+    "name" : "vegan",
+    "type" : "boolean"
+  }, {
+    "name" : "calories",
+    "type" : "int"
+  } ]
+}
